@@ -1,0 +1,17 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+  <div class="post-preview">
+      <a href="{{post.link}}">
+          <h2 class="post-title">
+              {{post.title}}
+          </h2>
+          <h3 class="post-subtitle">
+              {{post.get_preview(25)}}
+          </h3>
+      </a>
+      <p class="post-meta">Posted by <a href="{{post.link}}">{{post.author.name}}</a> on {{post.post_date|date}}</p>
+  </div>
+
+  <hr>
+{% endblock %}

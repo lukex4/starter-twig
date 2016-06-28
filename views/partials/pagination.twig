@@ -1,0 +1,16 @@
+<!-- Pager -->
+<ul class="pager">
+
+    {% if pagination.prev %}
+      <li class="previous">
+          <a href="{{pagination.prev.link}}">&larr; Newer Posts</a>
+      </li>
+    {% endif %}
+
+    {% if pagination.next %}
+      <li class="next">
+          <a href="{{pagination.next.link}}">Older Posts &rarr;</a>
+      </li>
+    {% endif %}
+
+</ul>
